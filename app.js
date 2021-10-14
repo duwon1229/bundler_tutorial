@@ -1,2 +1,2 @@
-new Promise();
-const a = 1;
+console.log()
+(function () {})()
