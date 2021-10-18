@@ -1,11 +1,8 @@
-import "./app.css";
-import nyancat from "./nyancat.jpg";
+import axios from "axios";
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  const res = await axios.get("/api/users");
+  console.log(res);
   document.body.innerHTML = `
     <img src="${nyancat}" />`;
 });
-
-console.log(process.env.NODE_ENV);
-console.log(TWO);
-console.log(api.domain);
